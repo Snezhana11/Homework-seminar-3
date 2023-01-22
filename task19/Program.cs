@@ -7,17 +7,17 @@
 System.Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int a = num;
-int b = 0;
-int c;
+int num1 = num;
+int num2 = 0;
+int num3;
 while( num > 0 )
 {
-    c = num % 10; 
-    b = b * 10 + c;
+    num3 = num % 10; 
+    num2 = num2 * 10 + num3;
     num = num / 10;
 }
 
-if(a == b)
+if(num1 == num2)
 {
     Console.WriteLine("палиндром");
 }
